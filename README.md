@@ -1,4 +1,4 @@
-This projects will be represented how to update single views by multiple data sources with SpringBoot.
+This projects will be represented how to update single view by multiple data sources in the SpringBoot services.
 
 Setup:
 1.	Setup all DB backups on the MySql server.
