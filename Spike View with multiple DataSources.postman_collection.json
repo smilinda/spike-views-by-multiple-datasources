@@ -1,0 +1,267 @@
+{
+	"id": "d4a1d234-ba10-4ca8-9b2d-4c9d7473964b",
+	"name": "Spike View with multiple DataSources",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"9863336c-0f18-4c9d-981d-0c8cfd7e4f31",
+		"011f38d5-5ea2-49b8-8bbe-e048c05bc8fc",
+		"592c19e8-d2a4-4041-b0c1-3e7faef67161",
+		"a70e52da-e286-4321-bdde-edcc68087524"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "011f38d5-5ea2-49b8-8bbe-e048c05bc8fc",
+			"name": "http://localhost:9001/allCourses",
+			"url": "http://localhost:9001/allCourses",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "ef5693c6-bda4-43fa-a3da-0cb673d5d3b5",
+					"name": "http://localhost:9001/allCourses",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "[\n    {\n        \"xid\": \"4ca10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-01\"\n    },\n    {\n        \"xid\": \"5aa10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-02\"\n    },\n    {\n        \"xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-03\"\n    },\n    {\n        \"xid\": \"4ca10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-01\"\n    },\n    {\n        \"xid\": \"5aa10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-02\"\n    },\n    {\n        \"xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"code\": \"CMD-03\"\n    }\n]",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"dataOptions": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:9001/allCourses"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jan 2021 12:36:33 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "011f38d5-5ea2-49b8-8bbe-e048c05bc8fc",
+					"collection": "d4a1d234-ba10-4ca8-9b2d-4c9d7473964b"
+				}
+			],
+			"pathVariables": {}
+		},
+		{
+			"id": "592c19e8-d2a4-4041-b0c1-3e7faef67161",
+			"name": "http://localhost:9002/allEnrolment",
+			"url": "http://localhost:9002/allEnrolment",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "be748b9e-a997-4fd7-bb45-d5520e411ffb",
+					"name": "http://localhost:9002/allEnrolment",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "[\n    {\n        \"id\": 1,\n        \"student_xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"5aa10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610106192000,\n        \"registeredBy\": \"Mr.Perera\"\n    },\n    {\n        \"id\": 2,\n        \"student_xid\": \"7da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"4ca10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610106192000,\n        \"registeredBy\": \"Mrs.Shila\"\n    },\n    {\n        \"id\": 3,\n        \"student_xid\": \"8da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610106192000,\n        \"registeredBy\": \"Mis.Roshini\"\n    },\n    {\n        \"id\": 4,\n        \"student_xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"5aa10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610107037000,\n        \"registeredBy\": \"Mr.Perera\"\n    },\n    {\n        \"id\": 5,\n        \"student_xid\": \"7da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"4ca10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610107038000,\n        \"registeredBy\": \"Mrs.Shila\"\n    },\n    {\n        \"id\": 6,\n        \"student_xid\": \"8da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"course_xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3t\",\n        \"registeredDate\": 1610107038000,\n        \"registeredBy\": \"Mis.Roshini\"\n    }\n]",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"dataOptions": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:9002/allEnrolment"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jan 2021 12:36:40 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "592c19e8-d2a4-4041-b0c1-3e7faef67161",
+					"collection": "d4a1d234-ba10-4ca8-9b2d-4c9d7473964b"
+				}
+			],
+			"pathVariables": {}
+		},
+		{
+			"id": "9863336c-0f18-4c9d-981d-0c8cfd7e4f31",
+			"name": "http://localhost:9001/allStudents",
+			"url": "http://localhost:9001/allStudents",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "42b168b7-a142-4325-a942-d9fb43476d41",
+					"name": "http://localhost:9001/allStudents",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "[\n    {\n        \"xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Thishini Dilshanika\",\n        \"address\": \"Marawila\"\n    },\n    {\n        \"xid\": \"7da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Chanika Kumari\",\n        \"address\": \"Thoduwawe\"\n    },\n    {\n        \"xid\": \"8da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Sayaurangi Fernando\",\n        \"address\": \"Naththandiya\"\n    },\n    {\n        \"xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Thishini Dilshanika\",\n        \"address\": \"Marawila\"\n    },\n    {\n        \"xid\": \"7da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Chanika Kumari\",\n        \"address\": \"Thoduwawe\"\n    },\n    {\n        \"xid\": \"8da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Sayaurangi Fernando\",\n        \"address\": \"Naththandiya\"\n    }\n]",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"dataOptions": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:9001/allStudents"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jan 2021 12:36:31 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "9863336c-0f18-4c9d-981d-0c8cfd7e4f31",
+					"collection": "d4a1d234-ba10-4ca8-9b2d-4c9d7473964b"
+				}
+			],
+			"pathVariables": {}
+		},
+		{
+			"id": "a70e52da-e286-4321-bdde-edcc68087524",
+			"name": "http://localhost:9000/applicantInfoReport",
+			"url": "http://localhost:9000/applicantInfoReport",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "9ee1cd6f-17d0-4efd-94ae-06aa94b08ba9",
+					"name": "http://localhost:9000/applicantInfoReport",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "[\n    {\n        \"xid\": \"6da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Thishini Dilshanika\",\n        \"address\": \"Marawila\",\n        \"registeredBy\": \"Mr.Perera\",\n        \"registeredDate\": 1610106192000\n    },\n    {\n        \"xid\": \"7da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Chanika Kumari\",\n        \"address\": \"Thoduwawe\",\n        \"registeredBy\": \"Mrs.Shila\",\n        \"registeredDate\": 1610106192000\n    },\n    {\n        \"xid\": \"8da10af5-cc05-40ab-9fd9-ba82273f3a3a\",\n        \"name\": \"Sayaurangi Fernando\",\n        \"address\": \"Naththandiya\",\n        \"registeredBy\": \"Mis.Roshini\",\n        \"registeredDate\": 1610106192000\n    }\n]",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"dataOptions": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "http://localhost:9000/applicantInfoReport"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 08 Jan 2021 12:37:29 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "a70e52da-e286-4321-bdde-edcc68087524",
+					"collection": "d4a1d234-ba10-4ca8-9b2d-4c9d7473964b"
+				}
+			],
+			"pathVariables": {}
+		}
+	]
+}
