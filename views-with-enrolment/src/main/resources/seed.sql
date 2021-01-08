@@ -1,0 +1,3 @@
+INSERT INTO course_envolment VALUES(0,'6da10af5-cc05-40ab-9fd9-ba82273f3a3a','5aa10af5-cc05-40ab-9fd9-ba82273f3a3t',now(),'Mr.Perera');
+INSERT INTO course_envolment VALUES(0,'7da10af5-cc05-40ab-9fd9-ba82273f3a3a','4ca10af5-cc05-40ab-9fd9-ba82273f3a3t',now(),'Mrs.Shila');
+INSERT INTO course_envolment VALUES(0,'8da10af5-cc05-40ab-9fd9-ba82273f3a3a','6da10af5-cc05-40ab-9fd9-ba82273f3a3t',now(),'Mis.Roshini');

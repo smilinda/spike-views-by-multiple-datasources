@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: views-with-registration
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Shiran
+Implementation-Vendor-Id: com.shiran.spike.registration
+Build-Jdk: 1.8.0_271
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
