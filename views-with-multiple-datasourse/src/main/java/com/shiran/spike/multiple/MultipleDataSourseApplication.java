@@ -37,7 +37,7 @@ public class MultipleDataSourseApplication {
 
     @RequestMapping("/applicantInfoReport")
     public List<Map<String, Object>> getStudentsReport() {
-        return jdbcTemplate.queryForList("select * from student_envolmenting_report");
+        return jdbcTemplate.queryForList("select * from student_envolmenting_report_view");
     }
 
 }
